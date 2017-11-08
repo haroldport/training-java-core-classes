@@ -17,6 +17,12 @@ public class Principal {
 		LocalDate miFecha3 = miFecha2.withDayOfMonth(20);
 		System.out.println(miFecha3);
 		
+		LocalDate miFecha4 = LocalDate.of(2015, 1, 1);
+//		LocalDate miFecha5 = miFecha4.plusYears(1);
+//		LocalDate miFecha6 = miFecha5.plusMonths(1);
+		//ejemplo de API fluida en Java 8
+		System.out.println(miFecha4.plusYears(1).plusMonths(1).plusDays(10));
+		
 	}
 
 }
